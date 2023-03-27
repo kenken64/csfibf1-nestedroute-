@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {path: 'details', component: ProductDetailsComponent,
         children: [
-          {path: 'info', component: ProductInfoComponent},
+          {path: 'info/:pid', component: ProductInfoComponent},
           {path: 'specs', component: ProductSpecsComponent},
           {path: '**', redirectTo: 'details', pathMatch:"full"}
         ]}
